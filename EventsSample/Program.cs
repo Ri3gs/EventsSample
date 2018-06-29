@@ -10,6 +10,13 @@ namespace EventsSample
 	{
 		static void Main(string[] args)
 		{
+			var store = new EventStore();
+			var @event = new AgreedOnTermsEvent(Guid.NewGuid(), 21, "sample", "email", "iban");
+
+			//var type = @event.GetType();
+			store.Save(@event);
+
+			var @events = store.GetAll(21);
 		}
 	}
 }
