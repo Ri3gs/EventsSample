@@ -6,11 +6,11 @@ Create db for this demo with following script:
 USE master;
 GO
 
-IF DB_ID (N'EventsSample1') IS NULL
-CREATE DATABASE EventsSample1;
+IF DB_ID (N'EventsSample') IS NULL
+CREATE DATABASE EventsSample;
 GO
 
-Use EventsSample1;
+Use EventsSample;
 Go
 
 CREATE TABLE [dbo].Events(
