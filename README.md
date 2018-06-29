@@ -6,7 +6,6 @@ Create db for this demo with following script:
 USE master;
 GO
 
-IF DB_ID (N'EventsSample') IS NULL
 CREATE DATABASE EventsSample;
 GO
 
